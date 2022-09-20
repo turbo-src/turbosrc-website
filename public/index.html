@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turbo-Src</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript" src="/script.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <header class="header">
+        <a href="./index.html"><img src="./logoviolet.png" /></a>
+      </header>
+
+      <span>
+        <!-- Menu Button -->
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="mobileMenu"></div>
+        </label>
+
+        <ul class="menu">
+          <span>
+            <li>
+              <a href="#">Install</a>
+            </li>
+            <li>
+              <a href="#">Learn</a>
+            </li>
+            <li>
+              <a href="#">Community</a>
+            </li>
+          </span>
+          <span>
+            <li><a href="#">Sign Up</a></li>
+            <li className="login"><a href="#">Login</a></li>
+            <li>
+              <a href="https://github.com/turbo-src" target="_blank">
+              <img src="./github.png" />
+            </a>
+            </li>
+          </span>
+        </ul>
+      </span>
+    </nav>
+<div class="search">
+  <input type="text" placeholder="Search turbo-src projects"></input><button type="button"><img src="./search.png" /></button>
+</div>
+    <!-- Content -->
+    <section class="content">
+      <!-- Video Carousel -->
+
+      <div class="introVideo">
+        <nav><span><a href=#">Mac</a></span><span><a href=#">Windows</a></span><span><a href=#">Linux</a></span></nav>
+        <div class="carouselViewport">
+          <span id="slide1" class="slide">
+            <video type="video/mpg" controls autoplay>
+              <source src="https://reibase.herokuapp.com/shortdemo.mp4" />
+            </video>
+            <div class="carouselSnapper"></div>
+          </span>
+          <span id="slide2" class="slide">
+            <video type="video/mpg" controls autoplay>
+              <source src="https://reibase.herokuapp.com/shortdemo.mp4" />
+              <div class="carouselSnapper"></div>
+            </video>
+          </span>
+          <span id="slide3" class="slide">
+            <video type="video/mpg" controls autoplay>
+              <source src="https://reibase.herokuapp.com/shortdemo.mp4" />
+              <div class="carouselSnapper"></div>
+            </video>
+          </span>
+          <span id="slide4" class="slide">
+            <video type="video/mpg" controls autoplay>
+              <source src="https://reibase.herokuapp.com/shortdemo.mp4" />
+            </video>
+            <div class="carouselSnapper"></div>
+          </span>
+        </div>
+
+        <div class="videoButtons">
+          <a href="#slide1">
+            <button type="button" class="bullet" name="part1"></button>
+          </a>
+
+          <a href="#slide2">
+            <button type="button" class="bullet"></button>
+          </a>
+
+          <a href="#slide3">
+            <button type="button" class="bullet"></button>
+          </a>
+
+          <a href="#slide4">
+            <button type="button" class="bullet"></button>
+          </a>
+        </div>
+        <div class="labels">
+          <span>Load</span>
+          <span>Vote</span>
+          <span>Get Tokens</span>
+          <span>Setup</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">Copyright 2022 Turbo-src contributors</footer>
+  </body>
+</html>

@@ -1,0 +1,328 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    font-weight:300;
+    font-size: 12px;
+    letter-spacing: .5px;
+}
+:root {
+    /* --primary: #3730a3; */
+    --primary: #000;
+    --secondary:#727272;
+    --blue:#7b7b7b;
+    --dark: #111827;
+    --light: #f4f4f5;
+}
+a {
+    color: var(--secondary);
+}
+a:hover {
+    color: var(--primary);
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    padding:1rem;
+    font-size: 16px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.nav span {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.nav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--primary);
+    overflow: hidden;
+}
+.nav a:hover{
+    border-bottom: 1px solid var(--primary);
+    color: var(--primary);
+}
+.mobileNav {
+    display: none;
+    flex-direction: column;
+    width: 100vw;
+}
+.search {
+    width: 100vw;
+    height: 6rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    overflow: hidden;
+}
+.search input {
+    width: 50%;
+    padding: 1rem;
+    font-size: 16px;
+    outline: .5px solid var(--secondary);
+    border: .5px solid var(--secondary);
+}
+.search button {
+    margin-left:.1rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 5%;
+    height: 100%;
+    background-color: var(--light);
+}
+.search button img {
+    height: 2rem;
+}
+.search button:hover {
+    background-color: var(--secondary);
+}
+.mobileMenu {
+    display: none;
+    background-image: url("./menu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu span {
+    width: 100%;
+  }
+  .menu span:last-child {
+    justify-content: flex-end;
+  }
+  .menu li {
+    margin: 0 1rem;
+    width:fit-content;
+    overflow: hidden;
+  }
+  #menu-toggle {
+    display: none;
+  }
+.header {
+    width: 250px;
+    overflow: hidden;
+}
+.header img {
+    width: 100%;
+}
+.content {
+    min-height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.introVideo {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 4rem;
+}
+.introVideo nav {
+    height: 1rem;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-bottom: .5rem;
+}
+.introVideo nav span {
+    padding: .5rem;
+    border-right: 1px solid var(--secondary);
+}
+.introVideo nav span:last-child {
+    border: none;
+}
+.carouselViewport {
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+  }
+  .slide {
+    position: relative;
+    flex: 0 0 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+  }
+  .slide video {
+      width: 100%;
+  }
+.videoButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.videoButtons a {
+    border: none;
+    margin: 1rem .2rem 1rem .2rem;
+    background-color: #111827;
+    width: 25%;
+    opacity: .8;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.videoButtons a:hover {
+    opacity: 1;
+}
+.videoButtons a:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.videoButtons a:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.videoButtons button {
+    border: 1px solid #111827;
+   box-shadow: 0 0 8px 8px var(--primary);
+}
+.labels {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 6rem 0 6rem;
+}
+.labels span {
+    color: var(--secondary);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+}
+.bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #f4f4f5;
+    border-radius: 100%;
+}
+.getStarted {
+    cursor: pointer;
+    outline: none;
+    border:none;
+    background-color: var(--primary);
+    border-color: var(--primary);
+    padding: 1rem 1rem 1rem 1rem;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    width: fit-content;
+}
+.confirmEmail {
+    font-size: small;
+    font-style: italic;
+    padding-top: 1rem;
+}
+.footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    height: fit-content;
+    align-items: flex-end;
+    padding: 1rem;
+    color:var(--light);
+    width: 100vw;
+    background-color: var(--secondary);
+}
+
+@media (max-width: 820px) {
+    .header {
+        width: 50%;
+    }
+    .header img {
+        object-fit: contain;
+    }
+    .links {
+        display: none;
+    }
+    .nav {
+        margin: 0;
+        height:fit-content;
+        justify-content: space-between;
+    }
+    .nav span {
+       justify-content: space-between;
+    }
+    .mobileMenu {
+        display:block;
+    }
+    .mobileNav {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        margin-top: 135px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #FFF;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      }
+      .menu span {
+        flex-direction: column;
+      }
+      .menu span li {
+        height: 2rem;
+      }
+      #menu-toggle ~ .menu  {
+        height: 0;
+        transition: height 0ms;
+      }
+      #menu-toggle:checked ~ .menu {
+        height: 20em;
+        padding: 0.5em;
+        transition: height 0ms;
+      }
+      .search input {
+        width: 100%;
+      }
+      .search button {
+        width: 5rem;
+      }
+    .content {
+        flex-direction: row;
+        padding: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        min-height: 78vh;
+    }
+    .introVideo {
+        width: 100%;
+        margin: 1rem;
+    }
+    .labels {
+        padding: 0 3rem 0 3rem;
+    }
+}
