@@ -10,20 +10,19 @@
  }
 
  :root {
-     /* --primary: #3730a3; */
-     --primary: #000;
-     --secondary: #727272;
-     --blue: #7b7b7b;
+     --primary: #6e48aa;
+     --secondary: #DA70D6;
+     --gray: #7b7b7b;
      --dark: #111827;
      --light: #f4f4f5;
  }
 
  a {
-     color: var(--secondary);
+     color: var(--primary);
  }
 
  a:hover {
-     color: var(--primary);
+     color: var(--dark);
  }
 
  .nav {
@@ -158,7 +157,18 @@
      align-items: center;
      width: 100vw;
      justify-content: center;
-     font-size: 24px;
+     font-size: 22px;
+     font-weight: bold;
+ }
+
+ .banner span {
+     font-size: 22px;
+     font-weight: bold;
+     color: var(--primary);
+ }
+
+ .primary {
+     color: var(--primary);
  }
 
  .content {
@@ -176,9 +186,41 @@
      flex-direction: column;
  }
 
- .introText span {
-     padding: 1rem;
+ .introText div {
      font-size: 24px;
+     padding: 1rem;
+ }
+
+ .introText span {
+     font-size: 24px;
+ }
+
+ .headline {
+     color: var(--secondary);
+ }
+
+ .introPrimary {
+     font-size: 24px;
+     color: var(--primary);
+ }
+
+ .introSecondary {
+     font-size: 24px;
+     color: var(--secondary);
+ }
+
+ .getStartedButton {
+     color: #FFF;
+     background-color: var(--primary);
+     font-size: 26px;
+     padding: 1rem;
+     outline: none;
+     border: none;
+     cursor: pointer;
+ }
+
+ .getStartedButton:hover {
+     background-color: var(--primary);
  }
 
  .introVideo {
@@ -191,13 +233,13 @@
  .introVideo nav {
      height: 1rem;
      text-transform: uppercase;
-     color: var(--secondary);
+     color: var(--gray);
      margin-bottom: .5rem;
  }
 
  .introVideo nav span {
      padding: .5rem;
-     border-right: 1px solid var(--secondary);
+     border-right: 1px solid var(--gray);
  }
 
  .introVideo nav span:last-child {
@@ -272,7 +314,7 @@
  }
 
  .labels span {
-     color: var(--secondary);
+     color: var(--gray);
      text-transform: uppercase;
      font-weight: 500;
      font-size: 16px;
@@ -313,7 +355,7 @@
      padding: 1rem;
      color: var(--light);
      width: 100vw;
-     background-color: var(--secondary);
+     background-color: var(--gray);
  }
 
  @media (max-width: 820px) {
