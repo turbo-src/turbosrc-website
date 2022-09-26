@@ -173,7 +173,7 @@
      color: var(--primary);
  }
 
- .content {
+ .landing {
      min-height: 80vh;
      width: 100vw;
      display: flex;
@@ -390,6 +390,84 @@
      padding-top: 1rem;
  }
 
+ .votePower {
+     width: 100vw;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: row;
+     padding: 2rem;
+ }
+
+ .votePower div {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     padding: 5rem;
+ }
+
+ .votePower div button {
+     padding: 2rem;
+     font-size: 24px;
+     color: #FFF;
+     border: none;
+     outline: none;
+     margin: 2rem 0 2rem 0;
+ }
+
+ .votePower div:nth-child(1) {
+     border-right: 1px solid #CCC;
+ }
+
+ .votePower div h1 {
+     font-size: 36px;
+     margin: 0 0 2rem 0;
+ }
+
+ .votePower div:nth-child(1) h1 {
+     color: var(--secondary);
+ }
+
+ .votePower div:nth-child(1) button {
+     background-color: var(--secondary);
+ }
+
+ .votePower div:nth-child(2) h1 {
+     color: var(--primary);
+ }
+
+ .votePower div:nth-child(2) button {
+     background-color: var(--primary);
+ }
+
+ .votePower div p {
+     font-size: 18px;
+     line-height: 2.5rem;
+     margin: 1rem 0rem 1rem 0;
+ }
+
+ .waitlist {
+     width: 100vw;
+     height: 100vh;
+     padding: 10rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .waitlist div {
+     font-size: 24px;
+     margin-bottom: 4rem;
+ }
+
+ .waitlist div button {
+     padding: 2rem;
+     font-size: 24px;
+     color: #FFF;
+     border: none;
+     padding: none;
+     background-color: var(--primary);
+ }
+
  .footer {
      display: flex;
      height: fit-content;
@@ -474,7 +552,7 @@
          width: 5rem;
      }
 
-     .content {
+     .landing {
          flex-direction: column;
          padding: 0;
          margin: 0;
