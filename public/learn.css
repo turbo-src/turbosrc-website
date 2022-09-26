@@ -84,6 +84,16 @@ body {
     margin-bottom: 2rem;
 }
 
+.learn div p a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.learn div p a:hover {
+    color: var(--dark);
+    text-decoration: underline;
+}
+
 .learn div p:last-child {
     border-bottom: 1px solid #CCC;
 }
