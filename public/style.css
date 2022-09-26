@@ -611,4 +611,22 @@
      .labels {
          padding: 0 3rem 0 3rem;
      }
+
+     .votePower {
+         flex-direction: column;
+         padding: 1rem;
+         margin: 0;
+     }
+
+     .votePower div {
+         width: 100%;
+     }
+
+     .votePower div:nth-child(1) {
+         border: none;
+     }
+
+     .waitlist {
+         padding: 1rem;
+     }
  }
