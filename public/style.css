@@ -14,9 +14,9 @@
      --primary: #3c18b3;
      --secondary: #db2777;
      --lightBlue: #38bdf8;
-     --gray: #7b7b7b;
-     --dark: #111827;
-     --light: #f4f4f5;
+     --gray: #6b7280;
+     --dark: #27272a;
+     --light: #cbd5e1;
  }
 
  a {
@@ -88,13 +88,13 @@
      width: 50%;
      padding: 1rem;
      font-size: 16px;
-     outline: .5px solid #CCC;
-     border: .5px solid #CCC;
+     border: .5px solid var(--light);
+     outline: .5px solid var(--light);
  }
 
  .search button {
-     margin-left: .1rem;
      border: none;
+     outline: none;
      cursor: pointer;
      text-transform: uppercase;
      width: 5%;
@@ -213,6 +213,7 @@
 
  .introText span {
      font-size: 20px;
+     line-height: 2.5rem;
      color: var(--secondary);
      margin-bottom: .5rem;
  }
