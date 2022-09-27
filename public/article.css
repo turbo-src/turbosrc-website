@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 5rem 24rem 5rem 21rem;
+    padding: 5rem 26rem 5rem 23rem;
     overflow: visible;
 }
 
@@ -35,6 +35,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: visible;
     width: 100%;
 }
 
@@ -94,6 +96,8 @@
     }
 
     .blog article {
+        flex-wrap: wrap;
+        flex-direction: column;
         height: auto;
     }
 }
