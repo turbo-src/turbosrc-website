@@ -8,6 +8,7 @@
      font-size: 12px;
      letter-spacing: .5px;
      scroll-behavior: smooth;
+     overflow-y: visible;
  }
 
  :root {
@@ -173,7 +174,31 @@
  }
 
  .primary {
+     font-size: inherit;
+     font-weight: inherit;
+     line-height: inherit;
      color: var(--primary);
+ }
+
+ .secondary {
+     font-size: inherit;
+     font-weight: inherit;
+     line-height: inherit;
+     color: var(--secondary);
+ }
+
+ .dark {
+     font-size: inherit;
+     font-weight: inherit;
+     line-height: inherit;
+     color: var(--dark);
+ }
+
+ .gray {
+     font-size: inherit;
+     font-weight: inherit;
+     line-height: inherit;
+     color: var(--gray);
  }
 
  .landing {
@@ -400,7 +425,7 @@
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     line-height: 5rem;
+     line-height: 8rem;
      height: 50vh;
      color: var(--dark);
  }
@@ -431,6 +456,7 @@
      flex-direction: column;
      align-items: center;
      padding: 5rem;
+     color: var(--dark);
  }
 
  .votePower div button {
@@ -520,12 +546,10 @@
 
  .waitlist div h1 {
      font-size: 36px;
-     color: var(--primary);
  }
 
  .waitlist div h2 {
      font-size: 26px;
-     color: var(--primary);
  }
 
  .waitlist div button {
