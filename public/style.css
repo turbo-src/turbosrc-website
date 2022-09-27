@@ -259,7 +259,7 @@
  .learnMore a {
      text-decoration: none;
      font-size: 22px;
-     color: var(--lightBlue);
+     color: var(--gray);
  }
 
  .learnMore a:hover {
