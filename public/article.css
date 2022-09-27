@@ -49,6 +49,7 @@
 
 .authorName {
     font-weight: 400;
+    color: var(--primary);
     font-size: inherit;
 }
 

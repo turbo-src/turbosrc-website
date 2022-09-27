@@ -12,8 +12,8 @@
 
  :root {
      --primary: #3c18b3;
-     --secondary: #DA70D6;
-     --lightBlue: #0085FF;
+     --secondary: #db2777;
+     --lightBlue: #38bdf8;
      --gray: #7b7b7b;
      --dark: #111827;
      --light: #f4f4f5;
@@ -25,6 +25,14 @@
 
  a:hover {
      color: var(--dark);
+ }
+
+ .bar {
+     height: .9rem;
+     width: 100vw;
+     display: block;
+     background: var(--primary);
+     background: linear-gradient(90deg, #3c18b3 20%, #db2777 100%);
  }
 
  .nav {
@@ -96,10 +104,6 @@
 
  .search button img {
      height: 2rem;
- }
-
- .search button:hover {
-     background-color: var(--secondary);
  }
 
  .mobileMenu {
