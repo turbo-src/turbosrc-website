@@ -22,18 +22,25 @@ body {
     font-size: 36px;
 }
 
-.learnNav div a {
+.learnNav div:nth-child(1) {
+    color: var(--gray)
+}
+
+.learnNav div:nth-child(2) a {
     color: var(--dark)
 }
 
-.learnNav div a:hover {
+.learnNav div:nth-child(3) a {
+    color: var(--secondary)
+}
+
+.learnNav div:nth-child(4) a {
     color: var(--primary)
 }
 
 .learn {
     width: 100vw;
-    min-height: 100vh;
-    padding: 0rem 10rem 10rem 10rem;
+    padding: 5rem 10rem 10rem 10rem;
     display: flex;
     flex-direction: column;
 }

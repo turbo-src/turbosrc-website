@@ -3,12 +3,14 @@
      padding: 0;
      box-sizing: border-box;
      font-family: 'Poppins', sans-serif;
-     overflow-x: hidden;
      font-weight: 300;
      font-size: 12px;
      letter-spacing: .5px;
      scroll-behavior: smooth;
-     overflow-y: visible;
+ }
+
+ body {
+     overflow-x: hidden;
  }
 
  :root {
@@ -17,6 +19,7 @@
      --lightBlue: #38bdf8;
      --gray: #6b7280;
      --dark: #273036;
+     --deeppurple: #160f24;
      --light: #F3F4F5;
  }
 
@@ -37,6 +40,7 @@
  }
 
  .nav {
+     position: sticky;
      display: flex;
      flex-direction: row;
      justify-content: flex-start;
@@ -71,10 +75,6 @@
      display: none;
      flex-direction: column;
      width: 100vw;
- }
-
- .bg-dark {
-     background-color: #000;
  }
 
  .search {
@@ -143,7 +143,7 @@
  }
 
  .menu li {
-     margin: 0 1rem;
+     margin: 0 1rem 0 1rem;
      width: fit-content;
      overflow: hidden;
  }
@@ -274,6 +274,7 @@
      outline: none;
      border: none;
      cursor: pointer;
+     text-decoration: none;
  }
 
  .learnMore {
@@ -283,19 +284,11 @@
      margin: 2rem 1rem 1rem 0rem;
      outline: none;
      border: none;
- }
-
- .learnMore a {
      text-decoration: none;
-     font-size: 22px;
-     color: var(--gray);
- }
-
- .learnMore a:hover {
-     color: var(--dark);
  }
 
  .getStartedButton:hover {
+     color: #fff;
      background-color: var(--primary);
  }
 
@@ -417,6 +410,11 @@
      width: fit-content;
  }
 
+ .getStartedButton:hover {
+     background-color: #2b006b;
+     border-color: #2b006b;
+ }
+
  .confirmEmail {
      font-size: small;
      font-style: italic;
@@ -424,14 +422,16 @@
  }
 
  .votePowerHeadline {
-     width: 100%;
+     width: 100vw;
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
      line-height: 8rem;
-     height: 50vh;
-     color: var(--dark);
+     height: 80vh;
+     color: #FFF;
+     background-color: var(--deeppurple);
+     margin: 5rem 0 5rem 0;
  }
 
  .votePowerHeadline h1 {
@@ -451,25 +451,37 @@
      min-height: 100vh;
      display: flex;
      flex-direction: row;
-     padding: 2rem;
+     padding: 2rem 4rem 2rem 2rem;
  }
 
  .votePower div {
      width: 50%;
      display: flex;
+     min-height: 600px;
      flex-direction: column;
      align-items: center;
+     align-content: space-between;
      padding: 5rem;
      color: var(--dark);
  }
 
- .votePower div button {
+ .votePower div section {
+     width: 100%;
+     min-height: 400px;
+ }
+
+ .votePower div section h1 {
+     text-align: center;
+ }
+
+ .votePower div a {
      padding: 2rem;
      font-size: 24px;
-     color: #FFF;
-     border: none;
-     outline: none;
      margin: 2rem 0 2rem 0;
+     border-width: 2px;
+     border-style: solid;
+     background-color: #FFF;
+     text-decoration: none;
  }
 
  .votePower div:nth-child(1) {
@@ -485,7 +497,14 @@
      color: var(--secondary);
  }
 
- .votePower div:nth-child(1) button {
+ .votePower div:nth-child(1) a {
+     border-color: var(--secondary);
+     color: var(--secondary);
+ }
+
+
+ .votePower div:nth-child(1) a:hover {
+     color: #FFF;
      background-color: var(--secondary);
  }
 
@@ -493,7 +512,14 @@
      color: var(--primary);
  }
 
- .votePower div:nth-child(2) button {
+ .votePower div:nth-child(2) a {
+     background-color: #FFF;
+     border-color: var(--primary);
+     color: var(--primary);
+ }
+
+ .votePower div:nth-child(2) a:hover {
+     color: #FFF;
      background-color: var(--primary);
  }
 
@@ -518,7 +544,7 @@
 
  .git div {
      font-size: 24px;
-     margin-bottom: 4rem;
+     margin-bottom: 6rem;
  }
 
  .git div h1 {
@@ -529,7 +555,8 @@
      font-size: 26px;
  }
 
- .git div button {
+ .git div a {
+     text-decoration: none;
      padding: 2rem;
      font-size: 26px;
      color: #FFF;
@@ -578,7 +605,7 @@
      padding: 1rem;
      color: var(--light);
      width: 100vw;
-     background-color: var(--dark);
+     background-color: var(--deeppurple);
      margin: 0;
  }
 
@@ -723,6 +750,10 @@
 
      .votePower div {
          width: 100%;
+     }
+
+     .votePower div button {
+         position: relative;
      }
 
      .votePower div:nth-child(1) {
