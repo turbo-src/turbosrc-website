@@ -9,7 +9,7 @@
      scroll-behavior: smooth;
  }
 
- body {
+ body section {
      overflow-x: hidden;
  }
 
@@ -25,6 +25,7 @@
 
  a {
      color: var(--primary);
+     border-radius: 4px;
  }
 
  a:hover {
@@ -485,7 +486,6 @@
      color: var(--secondary);
  }
 
-
  .votePower div:nth-child(1) a:hover {
      color: #FFF;
      background-color: var(--secondary);
@@ -550,35 +550,92 @@
 
  .waitlist {
      width: 100vw;
-     height: 100vh;
-     padding: 10rem;
+     padding: 6rem;
      display: flex;
      flex-direction: column;
      align-items: center;
-     position: relative;
-     background-color: var(--light);
+     justify-content: center;
+     background-color: var(--deeppurple);
+     color: #fff;
  }
 
  .waitlist div {
-     font-size: 24px;
-     margin-bottom: 4rem;
- }
-
- .waitlist div h1 {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     text-align: center;
      font-size: 36px;
  }
 
- .waitlist div h2 {
-     font-size: 26px;
+ .waitlist div h1 {
+     font-size: 56px;
+     font-weight: 400;
+     margin-top: 6rem;
+     margin-bottom: 2rem;
  }
 
- .waitlist div button {
+ .waitlist div h2 {
+     font-size: 32px;
+     font-weight: 500;
+ }
+
+ .waitlist form {
+     margin: 4rem 0rem 4rem 0rem;
+ }
+
+ .waitlistButton {
      padding: 2rem;
      font-size: 26px;
-     color: #FFF;
+     color: var(--deeppurple);
+     background-color: #fff;
+     text-decoration: none;
+     font-weight: 400;
+     margin: 2rem;
      border: none;
-     padding: none;
-     background-color: var(--primary);
+     outline: none;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+
+ .waitlistButton:hover {
+     background-color: var(--gray);
+ }
+
+ .waitlist div form input {
+     border: none;
+     border-bottom: 1px solid #fff;
+     outline: none;
+     background: none;
+     margin: 2rem;
+     width: 460px;
+     padding: 1rem;
+     font-size: 32px;
+     text-align: center;
+     color: #fff;
+     -webkit-background: none;
+ }
+
+ .waitlist div input:-webkit-autofill,
+ input:-webkit-autofill:hover,
+ input:-webkit-autofill:focus,
+ textarea:-webkit-autofill,
+ textarea:-webkit-autofill:hover,
+ textarea:-webkit-autofill:focus,
+ select:-webkit-autofill,
+ select:-webkit-autofill:hover,
+ select:-webkit-autofill:focus {
+     -webkit-text-fill-color: #FFF;
+     -webkit-box-shadow: 0 0 0px 1000px var(--deeppurple) inset;
+     transition: background-color 5000s ease-in-out 0s;
+ }
+
+ .confirmEmail {
+     display: block;
+     height: 200px;
+ }
+
+ .web3 {
+     margin-top: 8rem;
  }
 
  .footer {
@@ -679,12 +736,12 @@
      }
 
      .votePowerHeadline h1 {
-         font-size: 36px;
+         font-size: 26px;
          line-height: normal;
      }
 
      .votePowerHeadline h2 {
-         font-size: 26px;
+         font-size: 18px;
      }
 
      .votePower {
@@ -714,10 +771,24 @@
      }
 
      .waitlist {
-         padding: 1rem;
+         padding: 2rem;
      }
 
      .waitlist div {
-         text-align: center;
+         font-size: 24px;
+     }
+
+     .waitlist div h1 {
+         font-size: 46px;
+     }
+
+     .waitlist div h2 {
+         font-size: 26px;
+         margin-bottom: 2rem;
+     }
+
+     .waitlist div input {
+         width: 160px;
+         font-size: 18px;
      }
  }
