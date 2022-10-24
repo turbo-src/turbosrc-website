@@ -474,6 +474,7 @@
 
  .votePower div h1 {
      font-size: 36px;
+     font-weight: 500;
      margin: 0 0 2rem 0;
  }
 
@@ -515,30 +516,47 @@
 
  .git {
      width: 100vw;
-     height: 100vh;
      padding: 10rem;
      display: flex;
      flex-direction: column;
      align-items: center;
      position: relative;
      background: var(--light);
-     background: linear-gradient(180deg, #FFF 20%, var(--light) 100%);
  }
 
  .git div {
-     font-size: 24px;
-     margin-bottom: 6rem;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
  }
 
  .git div h1 {
-     font-size: 36px;
+     font-size: 46px;
+     font-weight: 500;
+     margin-bottom: 2rem;
+ }
+
+ .gitButton {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     margin: 4rem 0rem 10rem 0rem;
  }
 
  .git div h2 {
-     font-size: 26px;
+     font-size: 46px;
+     margin-bottom: 8rem;
+ }
+
+ .git div h3 {
+     font-size: 36px;
+     margin-bottom: 4rem;
  }
 
  .git div a {
+     text-align: center;
      text-decoration: none;
      padding: 2rem;
      font-size: 26px;
@@ -546,6 +564,8 @@
      border: none;
      padding: none;
      background-color: var(--primary);
+     width: 220px;
+     margin-bottom: 8rem;
  }
 
  .waitlist {
