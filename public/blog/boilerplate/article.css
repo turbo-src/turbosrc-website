@@ -69,6 +69,13 @@
     font-style: italic;
 }
 
+.blogSubhead a {
+    color: rgb(116, 116, 116);
+    line-height: 30px;
+    font-size: inherit;
+    text-decoration: none;
+}
+
 .readMore a {
     font-weight: 400;
     color: var(--primary);
@@ -86,6 +93,13 @@
     margin: 2rem 0rem 1rem 0rem;
     line-height: 38px;
     font-size: 21px;
+}
+
+.articleContent p a {
+    color: rgb(116, 116, 116);
+    line-height: 30px;
+    font-size: inherit;
+    text-decoration: none;
 }
 
 .articleContent header {
