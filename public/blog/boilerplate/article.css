@@ -76,6 +76,10 @@
     text-decoration: none;
 }
 
+.blogSubhead a:hover {
+    color: #000;
+}
+
 .readMore a {
     font-weight: 400;
     color: var(--primary);
@@ -89,6 +93,28 @@
     text-decoration: underline;
 }
 
+.centerWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.centerWrapper figure {
+    margin: 2rem;
+}
+
+.centerWrapper figure a img {
+    border: 1px solid #333;
+    max-height: 320px;
+    height: auto;
+}
+
+.centerWrapper figure figcaption {
+    margin-top: .5rem;
+    font-size: 16px;
+}
+
 .articleContent p {
     margin: 2rem 0rem 1rem 0rem;
     line-height: 38px;
@@ -100,6 +126,10 @@
     line-height: 30px;
     font-size: inherit;
     text-decoration: none;
+}
+
+.articleContent p a:hover {
+    color: #000;
 }
 
 .articleContent header {
