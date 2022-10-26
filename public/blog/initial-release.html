@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reibase</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./boilerplate/article.css">
+    <link rel="stylesheet" href="./boilerplate/blog.css">
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    >
+   
+  </script>
+    <script type="text/javascript" src="/script.js"></script>
+  </head>
+  <body>
+    <div class="bar"></div>
+    <nav class="nav">
+
+      <header class="header">
+        <a href="../index.html"><img src="../logoviolet.png" /></a>
+      </header>
+
+      <span>
+        <ul class="menu">
+            <li>
+              <a href="https://github.com/turbo-src/extension">Install</a>
+            </li>
+            <li>
+              <a href="../faq.html">Learn</a>
+            </li>
+            <li>
+              <a href="./articles.html">Blog</a>
+            </li>
+            <li>
+              <a href="https://github.com/turbo-src" target="_blank">
+              <img src="../github.png" />
+            </a>
+            </li>
+        </ul>
+      </span>
+    </nav>
+
+<!-- Content -->
+<section class="blog">
+  <article class="article">
+    <header class="blogHeadline"><a href="./initial-release.html">Announcing Turbosrc: empowering contributors</a></header>
+    <div class="author"><span>David Szigeti - October 26, 2022</span></div>
+    <div class="blogSubhead">
+      In a previous blogpost we outlined a vision for rewarding contributors, self-sustaining open source projects, and improving security.
+    </div>
+  </article>
+
+<div class="articleContent">
+    <header>Alpha Launch</header>
+    <p>We are pleased to announce the alpha release of Turbosrc – free and open source software that empowers contributors as stakeholders. Here is the source code on Github. You can launch your own private instances if you choose. We still have a lot of work to polish for beta launch.
+    <p>The idea is simple. A maintainer gets a supply of 1 million VotePower for their project they put on Turbosrc. They can distribute VotePower to contributors, supporters and sponsors as they see fit.</p>
+    <ul>
+      <li>VotePower holders can transfer any amount of their VotePower to others</li>
+      <li>You weigh in on pull requests with VotePower - accept or reject</li>
+      <li>It can be used seamlessly on your current Github projects (more code hosts to come)</li>
+      <li>Turbosrc is not affiliated with Github - Turbosrc has a web extension</li>
+      <li>Turbosrc has unique IDs for pull requests under the hood (cross-platform)</li>
+    </ul>
+    <p>We have made a cloud hosted version available to alpha users. It comes with a web extension that works for Github projects that incentivizes developers, democratizes code development, and lowers the day-to-day burden of maintainers in ways once unimagined. More code hosts other than Github are to come, including a stand-alone web and cli app.</p>
+    <p>Alpha access is available to lobste.rs users here on turbosrc.org.</p>
+    <header>Democratize your code (no rush)</header>
+    <p>Maintainers can keep a majority of VotePower, or not. It’s up to them. Maintainers may choose to transfer VotePower democratically. Or they may retain majority VotePower, especially useful for younger projects that need to pivot or break things a lot.</p>
+    <p>Maintainers and other large holders of VotePower can choose to relinquish more VotePower over time. They can become more democratic as the project matures or hand over the reins completely to another core contributor group when they want to exit the project due to life or career changes. Or they could handover all their VotePower to their AI personality forever (just joking, please don’t).</p>
+    <p>There is no formula to tell you how to distribute VotePower initially as a maintainer. Just be mindful that others can transfer VotePower once you give it to them.</p>
+  <header>Social-driven automation and bots</header>
+  <p>Turbosrc will help projects that need to achieve a high velocity. Stakeholding contributors can vote on pull requests around the clock on different time-zones, eliminating any bottlenecks if a maintainer is asleep or wants to go on vacation. The maintainers' trusted group of contributors reflected by their respective VotePower can lighten the load. And the maintainer doesn’t have to risk a betrayer of trust, or careless person, with access control making code merges on their behalf.</p>
+  <p>And in a world racing towards increased AI in code development, Turbosrc offers a safe path forward. Giving a bot access control to merge code is risky. But with VotePower, stakeholders can choose to launch bots to vote alongside others, such as a bot that flags insecure dependencies. That way there are built-in checks-and-balances, natural buffers, and sum-greater-than-parts effect. This is better than relying on a single AI system. All of this is possible as there will be a public api for Turbosrc users to automate against.</p>
+  <header>Sponsorship and funding opportunities</header>
+  <p>You can also give sponsors (who’d appreciate it) of your project some VotePower. They’ll want to help out more if they’re directly engaged or have something of value. VotePower actually does something. This is better than the status quo: generally sponsorships (Open Collective to Github sponsors) are non-tax deductible expense in the United States. Tubosrc can compliment any sponsorship gesture. A win-win.</p>
+  <p>Most of the benefits of Turbosrc, we believe, can be achieved without Web3. One day, however, for maintainers that want that, sponsorship costs could be capitilized costs instead. Something that retains value via VotePower-Web3.</p>
+  <p>Most of the benefits of Turbosrc, we believe, can be achieved without Web3. One day, however, for maintainers that want that, sponsorship costs could be capitilized costs instead. Something that retains value via VotePower-Web3.</p>
+  <p>Turbosrc is a hosted service out-of-the-box. It’s not blockchain. However, others can choose to fork Turbosrc and ‘swap out’ VotePower for Web3 VotePower implementation. Turbosrc is modular by design and it’s fully open-source, so anyone is free to do this - just like anyone can use Linux for whatever they want. Again, Turbosrc stands on its own without Web3.</p>
+  <header>Contributing to Turbosrc itself</header>
+  <p>We have a lot of room for improvement. We didn’t spend time tightening up the code base yet. We’re a small team that bootstrapped this. We don’t fully-utilize the power of our graphQL api, which ties together all the Turbosrc subservices. We need to work towards ci/cd. There are lots of opportunities for those interested at all skill levels.</p>
+  <p>We will also use Turbosrc to develop Turbosrc “native”. Our aim is to have a democratic distribution of VotePower on Turbosrc natively as quickly as circumstances allow. We will reward and incentivize contributions with VotePower.</p>
+  <header>Final thoughts</header>
+  <p>Here is the source code on Github. There are several repos. The web extension only works with Chrome (or anything downstream of Chromium, such as Brave Browser). Firefox will be added soon. Again, Turbosrc works with git so we will have a totally independent web and cli app soon. And we’ll have more web extensions for other code hosts. Github is an obvious first choice.</p>
+  <p>A more technical and in-depth post on how the software works will follow. Such as how the quorum will work to prevent pull request from getting stuck from lulls in voter participation. And a more thorough explanation how Turbosrc is not locked-in to any service, including it’s cryptographically secure, cross-platform pull request system.</p>
+</div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">Copyright © 2022 Reibase contributors</footer>
+  </body>
+</html>

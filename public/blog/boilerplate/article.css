@@ -88,6 +88,22 @@
     font-size: 21px;
 }
 
+.articleContent header {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.articleContent ul {
+    margin: 4rem;
+    line-height: 38px;
+    font-size: 21px;
+}
+
+.articleContent ul li {
+    line-height: 38px;
+    font-size: 21px;
+}
+
 .strong {
     font-size: inherit;
     font-weight: 600;
