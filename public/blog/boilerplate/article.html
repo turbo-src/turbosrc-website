@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Turbo-Src</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./article.css">
+    <title>Reibase</title>
+    <link rel="stylesheet" href="./boilerplate/style.css" />
+    <link rel="stylesheet" href="./boilerplate/article.css">
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -16,32 +16,24 @@
     <script type="text/javascript" src="/script.js"></script>
   </head>
   <body>
-    <div class="bar"></div>
-    <nav class="nav">
-
-      <header class="header">
-        <a href="./index.html"><img src="./logoviolet.png" /></a>
-      </header>
-
-      <span>
-        <ul class="menu">
-            <li>
-              <a href="https://github.com/turbo-src/extension">Install</a>
-            </li>
-            <li>
-              <a href="./faq.html">Learn</a>
-            </li>
-            <li>
-              <a href="./blog.html">Blog</a>
-            </li>
-            <li>
-              <a href="https://github.com/turbo-src" target="_blank">
-              <img src="./github.png" />
-            </a>
-            </li>
-        </ul>
+    <span>
+      <nav class="nav">
+        <header class="header">
+          <a href="./index.html"><img src="./logo.png" /></a>
+        </header>
       </span>
-    </nav>
+  
+      <!-- Menu -->
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='mobileMenu'></div>
+      </label>
+        <ul class="menu">
+        <li>
+          <a href="./team.html">Team</a>
+        </li>
+      </ul>
+      </nav>
 
 <!-- Content -->
 <section class="blog">
@@ -50,7 +42,7 @@
     <div class="blogSubhead">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eveniet aut assumenda nam nulla, totam fuga ut reiciendis deleniti repellendus!
     </div>
-    <div class="author"><span><img src="./profilepicture.png" /><span class="authorName">John Smith,&nbsp;</span> Software Engineer</span><span>5 min read&nbsp;&#x2022;&nbsp;August 12, 2022</span></div>
+    <div class="author"><span><img src="./profilepicture.png" /><span class="authorName">John Smith,&nbsp;</span> Software Engineer</span><span>&nbsp;&#x2022;&nbsp;August 12, 2022</span></div>
 </article>
 
 <div class="articleContent">
