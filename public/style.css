@@ -213,12 +213,14 @@
  }
 
  .subHeader {
+     width: 80%;
      display: flex;
      justify-content: center;
      align-items: center;
-     width: 90%;
-     font-size: 22px;
-     color: var(--gray);
+     letter-spacing: -.01rem;
+     font-size: 38px;
+     line-height: 4rem;
+     color: var(--primary);
      padding: 1rem 0rem 1rem 2rem;
  }
 
@@ -737,7 +739,7 @@
      }
 
      .subHeader {
-         margin: 0 0 2rem 0;
+         margin: 1rem 0 1rem 0;
          padding: 0;
      }
 
