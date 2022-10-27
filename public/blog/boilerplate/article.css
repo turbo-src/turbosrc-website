@@ -107,7 +107,7 @@
 .centerWrapper figure a img {
     border: 1px solid #333;
     max-height: 320px;
-    height: auto;
+    width: auto;
 }
 
 .centerWrapper figure figcaption {
@@ -171,5 +171,20 @@
         flex-wrap: wrap;
         flex-direction: column;
         height: auto;
+    }
+
+    .articleContent ul {
+        margin: 2rem;
+        line-height: 38px;
+        font-size: 21px;
+    }
+
+    .articleContent ul li {
+        margin-bottom: 1rem;
+    }
+
+    .centerWrapper figure a img {
+        max-height: 220px;
+        width: auto;
     }
 }
